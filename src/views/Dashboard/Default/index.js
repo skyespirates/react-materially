@@ -1,6 +1,9 @@
 import React from 'react';
 import { makeStyles, Grid, Card, CardHeader, CardContent, Hidden, Typography, Divider, LinearProgress } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import Box from '@material-ui/core/Box';
+import Paper from '@material-ui/core/Paper';
 
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import TrendingDownIcon from '@material-ui/icons/TrendingDown';
@@ -60,7 +63,7 @@ const Default = () => {
 
     return (
         <Grid container spacing={gridSpacing}>
-            <Grid item xs={12}>
+            {/* <Grid item xs={12}>
                 <Grid container spacing={gridSpacing}>
                     <Grid item lg={3} sm={6} xs={12}>
                         <ReportCard
@@ -266,6 +269,31 @@ const Default = () => {
                     </Grid>
                 </Grid>
             </Grid>
+            <Grid container spacing={3}>
+                <Grid item xs={12}>
+                    <Paper sx={{ heigth: '36px' }}>xs=12</Paper>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <Paper sx={{ heigth: '36px' }}>xs=12 sm=6</Paper>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <Paper sx={{ heigth: '36px' }}>xs=12 sm=6</Paper>
+                </Grid>
+                <Grid item xs={6} sm={3}>
+                    <Paper sx={{ heigth: '36px' }}>xs=6 sm=3</Paper>
+                </Grid>
+            </Grid>
+            <Grid item xs={12}>
+                <Box sx={{ backgroundColor: '#fff' }}>
+                    <Box fontSize={24}>This is Header</Box>
+                    <TextField fullWidth sx={{ width: '50%' }} id="outlined-basic" label="Outlined" variant="outlined" />
+                    <TextField fullWidth sx={{ width: '50%' }} id="outlined-basic" label="Outlined" variant="outlined" />
+                    <TextField fullWidth sx={{ width: '50%' }} id="outlined-basic" label="Outlined" variant="outlined" />
+                    <TextField fullWidth sx={{ width: '50%' }} id="outlined-basic" label="Outlined" variant="outlined" />
+                    <TextField fullWidth sx={{ width: '50%' }} id="outlined-basic" label="Outlined" variant="outlined" />
+                    <TextField fullWidth sx={{ width: '50%' }} id="outlined-basic" label="Outlined" variant="outlined" />
+                </Box>
+            </Grid> */}
             <Grid item xs={12}>
                 <LatestorderCard title="Latest Order" />
             </Grid>

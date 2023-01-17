@@ -14,6 +14,8 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
+import { Link } from 'react-router-dom';
+
 const useStyles = makeStyles({
     table: {
         minWidth: 350,
@@ -37,7 +39,11 @@ const rows = [
 
 export default function LatestorderCard() {
     const classes = useStyles();
-
+    let count = 0;
+    const handleClick = () => {
+        count++;
+        console.log(`Clicked ${count} times`);
+    };
     return (
         <Grid container spacing={gridSpacing}>
             <Grid item xs={12}>
@@ -76,12 +82,16 @@ export default function LatestorderCard() {
                                                 <Chip color={row.statuscolor} label={row.status} size="small" />
                                             </TableCell>
                                             <TableCell>
-                                                <IconButton color="primary">
-                                                    <EditOutlinedIcon />
-                                                </IconButton>
-                                                <IconButton color="inherit">
-                                                    <DeleteOutlineOutlinedIcon />
-                                                </IconButton>
+                                                <Link to="/widget/statistic">
+                                                    <IconButton color="primary">
+                                                        <EditOutlinedIcon />
+                                                    </IconButton>
+                                                </Link>
+                                                <Link to="/widget/data">
+                                                    <IconButton color="inherit">
+                                                        <DeleteOutlineOutlinedIcon />
+                                                    </IconButton>
+                                                </Link>
                                             </TableCell>
                                         </TableRow>
                                     ))}

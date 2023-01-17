@@ -40,7 +40,7 @@ const SalesLineCard = (props) => {
             <CardContent className={classes.content}>
                 <Box color="#fff" bgcolor={bgColor ? bgColor : theme.palette.primary.main} p={3}>
                     <Grid container direction="column" spacing={1}>
-                        <Grid item container justify="space-between" alignItems="center">
+                        <Grid item container justifyContent="space-between" alignItems="center">
                             {title && (
                                 <Grid item>
                                     <Typography variant="subtitle1" color="inherit">
@@ -71,7 +71,7 @@ const SalesLineCard = (props) => {
                     </Grid>
                 </Box>
                 {footerData && (
-                    <Grid container justify="space-around" alignItems="center">
+                    <Grid container justifyContent="space-around" alignItems="center">
                         {footerHtml}
                     </Grid>
                 )}

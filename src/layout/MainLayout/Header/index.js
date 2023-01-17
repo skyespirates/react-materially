@@ -42,7 +42,7 @@ const Header = (props) => {
     return (
         <React.Fragment>
             <Box width={drawerWidth}>
-                <Grid container justify="space-between" alignItems="center">
+                <Grid container justifyContent="space-between" alignItems="center">
                     <Hidden smDown>
                         <Grid item>
                             <Box mt={0.5}>

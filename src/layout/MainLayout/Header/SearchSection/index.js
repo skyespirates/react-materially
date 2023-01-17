@@ -1,5 +1,5 @@
 import React from 'react';
-import { fade, Box, Button, makeStyles, InputBase, Hidden, Popper, Fade, Card, CardContent, Grid } from '@material-ui/core';
+import { alpha, Box, Button, makeStyles, InputBase, Hidden, Popper, Fade, Card, CardContent, Grid } from '@material-ui/core';
 import SearchTwoToneIcon from '@material-ui/icons/SearchTwoTone';
 import CloseTwoToneIcon from '@material-ui/icons/CloseTwoTone';
 import PopupState, { bindToggle, bindPopper } from 'material-ui-popup-state';
@@ -8,9 +8,9 @@ const useStyles = makeStyles((theme) => ({
     search: {
         position: 'relative',
         borderRadius: theme.shape.borderRadius,
-        backgroundColor: fade(theme.palette.common.white, 0.15),
+        backgroundColor: alpha(theme.palette.common.white, 0.15),
         '&:hover': {
-            backgroundColor: fade(theme.palette.common.white, 0.25),
+            backgroundColor: alpha(theme.palette.common.white, 0.25),
         },
         marginLeft: theme.spacing(1),
         marginRight: theme.spacing(2),

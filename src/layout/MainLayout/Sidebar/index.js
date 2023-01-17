@@ -56,7 +56,7 @@ const MainLayout = (props) => {
                 <Grid
                     container
                     direction="row"
-                    justify="center"
+                    justifyContent="center"
                     elevation={5}
                     alignItems="center"
                     spacing={0}
